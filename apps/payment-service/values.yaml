@@ -1,0 +1,5 @@
+# Deployment manifest for payment-service
+image:
+  repository: registry.company.com/payment-service
+  tag: v2.3.0
+  pullPolicy: IfNotPresent
