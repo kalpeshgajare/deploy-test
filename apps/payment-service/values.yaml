@@ -1,0 +1,15 @@
+# Deployment manifest for payment-service
+image:
+  repository: registry.company.com/payment-service
+  tag: v2.3.0
+  pullPolicy: IfNotPresent
+
+replicas: 2
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi
